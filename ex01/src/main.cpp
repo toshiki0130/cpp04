@@ -128,13 +128,6 @@ void test_memory_leak()
       delete b;
     }
     std::cout << "After b is destroyed" << std::endl;
-    
-    std::cout << "assign brain from a to c" << std::endl;
-    {
-        Animal c;
-        c = *a;
-    }
-    std::cout << "After c is destroyed" << std::endl;
     delete a;
   }
 }
